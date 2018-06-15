@@ -11,24 +11,24 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
-  get '/index' do
-    erb :index
-  end
-  get '/happy' do
-    erb :happy
-  end
-  get '/upset' do 
-    erb :upset
-  end
-  get '/peaceful' do 
-    erb :peaceful
-  end
-  get '/stressed' do 
-    erb :stressed
-  end
-  get '/about_us' do
-    erb :about_us
-  end
+  # get '/index' do
+  #   erb :index
+  # end
+  # get '/happy' do
+  #   erb :happy
+  # end
+  # get '/upset' do 
+  #   erb :upset
+  # end
+  # get '/peaceful' do 
+  #   erb :peaceful
+  # end
+  # get '/stressed' do 
+  #   erb :stressed
+  # end
+  # get '/about_us' do
+  #   erb :about_us
+  # end
   
   post '/' do
     @mood_results=mood(params[:one],params[:two],params[:three],params[:four],params[:five],params[:six],params[:seven],params[:eight],params[:nine],params[:ten])
