@@ -26,6 +26,9 @@ class ApplicationController < Sinatra::Base
   get '/stressed' do 
     erb :stressed
   end
+  get '/about' do
+    erb :about
+  end
   
   post '/' do
     @mood_results=mood(params[:one],params[:two],params[:three],params[:four],params[:five],params[:six],params[:seven],params[:eight],params[:nine],params[:ten])
