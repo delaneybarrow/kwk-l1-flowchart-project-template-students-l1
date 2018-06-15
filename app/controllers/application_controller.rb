@@ -26,8 +26,8 @@ class ApplicationController < Sinatra::Base
   get '/stressed' do 
     erb :stressed
   end
-  get '/about' do
-    erb :about
+  get '/about_us' do
+    erb :about_us
   end
   
   post '/' do
