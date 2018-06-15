@@ -35,6 +35,11 @@ class ApplicationController < Sinatra::Base
     return erb :results
   end
   
+  post '/index' do
+    @mood_results=mood(params[:one],params[:two],params[:three],params[:four],params[:five],params[:six],params[:seven],params[:eight],params[:nine],params[:ten])
+    return erb :results
+  end
+  
   
   
 end
